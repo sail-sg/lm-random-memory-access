@@ -1,4 +1,5 @@
 export WANDB_API_KEY=X # replace with your own wandb api key to view the result on wandb
+# export WANDB_PROJECT=testing_challenge_random
 DATASET_NAME=$1
 MODEL_NAME=$2
 REPLACE_MODEL_NAME=${MODEL_NAME//\//_}
@@ -56,7 +57,7 @@ elif [[ $MODEL_NAME == *7b* ]]; then
 else
   BATCH_SIZE=4
 fi
-WORKING_DIR="." # replace with your working directory e.g. where you want to save the models and predictions
+WORKING_DIR="~/run_data" # replace with your working directory e.g. where you want to save the models and predictions
 
 export SAVE_DIR=$WORKING_DIR/$WANDB_RUN_NAME
 export SAVE_PRED_DIR=$WORKING_DIR/saved_pred/$DATASET_NAME\_$MODEL_NAME # save prediction to this directory
