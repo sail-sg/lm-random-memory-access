@@ -17,7 +17,9 @@ The experiments are divided into the four parts:
 
 ## Running the experiments
 The scripts for each of the experiments can be found in their respective folders.
+For instance, if you wish to run the full recitation experiments on gpt2-large, you should be at the project root folder, and run:
 
+``bash full_recitation/run.sh gpt2-large``
 
 [//]: # (To run the experiments, you can simply use:)
 
