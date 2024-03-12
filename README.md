@@ -1,4 +1,13 @@
-This repo contains the code for reproducing experiments in the paper "Beyond Memorization: The Challenge of Random Memory Access in Language Models"
+# Beyond Memorization: The Challenge of Random Memory Access in Language Models
+
+This repo contains the code for reproducing experiments in our paper, Beyond Memorization: The Challenge of Random Memory Access in Language Models. 
+
+In our study, we reveal that language models (GPT2) are able to sequentially access their parametric memory while encountering challenges in randomly accessing memorized content.
+
+[//]: # (![Illustration of our tasks]&#40;assets/memory_intro_4.png&#41;)
+
+The central idea is that the model can memorize any content, but cannot access the memory in a random manner. We verify that the limited random access
+ability has implications on the real open-domain question answering: the model may fail to answer an question simply because it cannot access an answer stored in the middle of a memorized passage.
 
 ## Requirements
 Please create an environment using `pip` and `requirements.txt` file.
